@@ -3,12 +3,12 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto8
+      java: openjdk8
     commands:
 
   build:
     commands:
-      - mvn clean test -Dcucumber.options="--tags '@UITest and @Smoke'" -DExecutionPlatform="AWS_CHROME"
+      - mvn clean test -Dcucumber.options="--tags '@Complete'" -DExecutionPlatform="AWS_CHROME"
 
   post_build:
     commands:
