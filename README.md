@@ -1,15 +1,12 @@
 
 ### How to run the UI and RWD Tests
 
-###### UI & API - Smoke Tests
+###### UI Tests
 ```
-$ mvn clean test -Dcucumber.options="--tags @Smoke" -DexecutionPlatform="AWS_CHROME"
+$ mvn clean test -Dcucumber.options="--tags @Complete" -DexecutionPlatform="AWS_CHROME"
 ```
 
-###### API Tests :
-```
-$ mvn clean test -Dcucumber.options="--tags @APITest"
-```
+
 
 ###### UI Tests
 ```
